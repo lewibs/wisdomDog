@@ -1,40 +1,47 @@
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<html>
+	<head>
+		<title>Wisdom Dog</title>
 
-<!-- Load React. -->
-<!-- Note: when deploying, replace "development.js" with "production.min.js". -->
-<script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
-<script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
-<script src="theSacredTexts.js"></script>
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
-<style>
-body {
-  background-image: url('wisdomDogBackground.png');
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: 100% 100%;
-}
+		<!-- Load React. -->
+		<!-- Note: when deploying, replace "development.js" with "production.min.js". -->
+		<script src="https://unpkg.com/react@16/umd/react.production.min.js" crossorigin></script>
+		<script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js" crossorigin></script>
+		<script src="theSacredTexts.js"></script>
 
-.font {
-  font-family: "Times New Roman", Times, serif;
-  color: #fcf226;
-  text-shadow: #000000 1px 1px 1px;
-}
+		<style>
+		body {
+		  background-image: url('wisdomDogBackground.png');
+		  background-repeat: no-repeat;
+		  background-attachment: fixed;
+		  background-size: 100% 100%;
+		}
 
-.vert{
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
-}
-</style>
+		.font {
+		  font-family: "Times New Roman", Times, serif;
+		  color: #fcf226;
+		  text-shadow: #000000 1px 1px 1px;
+		}
 
-<body>
-		<center class="vert" style="padding:1%">
-			<h1 class="font">I dispense wisdom.</h1>
-			<img src="wisdomDog.png" class="w3-image" style="height:70%">
-			<h1 class="font" id="wisdom">This is my wisdom:</h1>
-		</center>
-</body>
+		.vert{
+		  position: relative;
+		  top: 50%;
+		  transform: translateY(-50%);
+		}
+		</style>
+	</head>
 
-<script>
-document.getElementById("wisdom").innerHTML = wisdom;
-</script>
+	<body>
+			<center class="vert" style="padding:1%">
+				<h1 class="font">I dispense wisdom.</h1>
+				<img src="wisdomDog.png" class="w3-image" style="height:70%">
+				<h1 class="font" id="wisdom">This is my wisdom:</h1>
+			</center>
+	</body>
+	
+	<script>
+	document.getElementById("wisdom").innerHTML = wisdom;
+	</script>
+	
+</html>
