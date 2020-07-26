@@ -1,5 +1,11 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
+<!-- Load React. -->
+<!-- Note: when deploying, replace "development.js" with "production.min.js". -->
+<script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+<script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+<script src="theSacredTexts.js"></script>
+
 <style>
 body {
   background-image: url('wisdomDogBackground.png');
@@ -19,18 +25,16 @@ body {
   top: 50%;
   transform: translateY(-50%);
 }
-
 </style>
 
 <body>
-	<center class="vert" style="">
-		<h1 class="font">I dispense wisdom.</h1>
-		<img src="wisdomDog.png" class="w3-image" style="height:70%">
-		<h1 class="font">this is my wisdom</h1>
-	</center>
+		<center class="vert" style="">
+			<h1 class="font">I dispense wisdom.</h1>
+			<img src="wisdomDog.png" class="w3-image" style="height:70%">
+			<h1 class="font" id="wisdom">This is my wisdom:</h1>
+		</center>
 </body>
 
 <script>
+document.getElementById("wisdom").innerHTML = wisdom;
 </script>
-
-<!--style="padding-top:5%;padding-left:10px;padding-right:10px"-->
