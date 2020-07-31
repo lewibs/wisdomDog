@@ -32,11 +32,3 @@ const theSacredTexts = [
 'From the mouth of the righteous comes the fruit of wisdom, but a perverse tongue will be silenced.',
 'The lips of the righteous know what finds favor, but the mouth of the wicked only what is perverse.'
 ];
-
-function getRandomInt(max) {
-  return Math.floor(Math.random() * Math.floor(max));
-}
-
-function getWisdom(theSacredTexts) {
-	document.getElementById("wisdom").innerHTML = theSacredTexts[getRandomInt(theSacredTexts.length)];
-}
