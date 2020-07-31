@@ -37,4 +37,6 @@ function getRandomInt(max) {
   return Math.floor(Math.random() * Math.floor(max));
 }
 
-let wisdom = theSacredTexts[getRandomInt(theSacredTexts.length)];
+function getWisdom(theSacredTexts) {
+	document.getElementById("wisdom").innerHTML = theSacredTexts[getRandomInt(theSacredTexts.length)];
+}
